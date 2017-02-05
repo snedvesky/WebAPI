@@ -1,0 +1,53 @@
+id Response
+
+Alt-Svc →quic=":443"; ma=2592000; v="35,34"
+	- Lets you know that alternative services are available by port 443, max-age is 2592000 and 		version 35 and 34 only
+Cache-Control →private, max-age=0, must-revalidate, no-transform
+	- Private describes that the cache is locked down and only a private cache can cache the 		response. Max-age describes that it is no bigger than 0 seconds and must be revalidated each 	time you attempt to contact the sever. The no-transform means that the cache is not permitted 		to transform the response cache that is being requested
+Content-Length →4089
+	- Size of the entire response body
+Content-Type →application/json; charset=UTF-8
+	- Describes that this is a json Application and uses UTF-8 character encoding
+Date →Sun, 05 Feb 2017 05:32:51 GMT
+	- States the date and time
+ETag →"vFp1TYDMppbWxVi0Wgw_upD83cI/VdvZJDZsxi4uNBR9Y1LZlo4GP3Y"
+	- Current value of entity Tag
+Expires →Sun, 05 Feb 2017 05:32:51 GMT
+	- Time that response becomes stale
+Server →GSE
+	-  Contains information regarding origin server
+X-Content-Type-Options →nosniff
+	- Prevents the browser from performing MIME-type sniffing
+X-Frame-Options →SAMEORIGIN
+	- Frame can only be viewed on the same origin of the response
+X-XSS-Protection →1; mode=block
+	- The ‘1’ enables cross-site scripting filter. ‘Block’ prevents the page from loading when 			attacked
+
+
+
+
+book Response
+
+Alt-Svc →quic=":443"; ma=2592000; v="35,34"
+	- Lets you know that alternative services are available by port 443, max-age is 2592000 and 		version 35 and 34 only
+Cache-Control →private, max-age=0, must-revalidate, no-transform
+	- Private describes that the cache is locked down and only a private cache can cache the 		response. Max-age describes that it is no bigger than 0 seconds and must be revalidated each 	time you attempt to contact the sever. The no-transform means that the cache is not permitted 		to transform the response cache that is being requested
+Content-Length →35331
+	- Size of the entire response body
+Content-Type →application/json; charset=UTF-8
+	- Describes that this is a json Application and uses UTF-8 character encoding
+Date →Sun, 05 Feb 2017 05:32:55 GMT
+	- Current date and time
+ETag →"vFp1TYDMppbWxVi0Wgw_upD83cI/q60QMPRMLKbiA98TvoiqJx_zwFo"
+	- Current value of entity Tag
+Expires →Sun, 05 Feb 2017 05:32:55 GMT
+	- Time that response becomes stale
+Server →GSE
+	-  Contains information regarding origin server
+X-Content-Type-Options →nosniff
+	- Prevents the browser from performing MIME-type sniffing
+X-Frame-Options →SAMEORIGIN
+	- Frame can only be viewed on the same origin of the response
+X-XSS-Protection →1; mode=block
+	- The ‘1’ enables cross-site scripting filter. ‘Block’ prevents the page from loading when 			attacked
+
