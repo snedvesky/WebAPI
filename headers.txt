@@ -1,9 +1,9 @@
 id Response
 
 Alt-Svc →quic=":443"; ma=2592000; v="35,34"
-	- Lets you know that alternative services are available by port 443, max-age is 2592000 and 		version 35 and 34 only
+	- Lets you know that alternative services are available by port 443, max-age is 2592000 and version 35 and 34 only
 Cache-Control →private, max-age=0, must-revalidate, no-transform
-	- Private describes that the cache is locked down and only a private cache can cache the 		response. Max-age describes that it is no bigger than 0 seconds and must be revalidated each 	time you attempt to contact the sever. The no-transform means that the cache is not permitted 		to transform the response cache that is being requested
+	- Private describes that the cache is locked down and only a private cache can cache the response. Max-age describes that it is no bigger than 0 seconds and must be revalidated each time you attempt to contact the sever. The no-transform means that the cache is not permitted to transform the response cache that is being requested
 Content-Length →4089
 	- Size of the entire response body
 Content-Type →application/json; charset=UTF-8
@@ -21,7 +21,7 @@ X-Content-Type-Options →nosniff
 X-Frame-Options →SAMEORIGIN
 	- Frame can only be viewed on the same origin of the response
 X-XSS-Protection →1; mode=block
-	- The ‘1’ enables cross-site scripting filter. ‘Block’ prevents the page from loading when 			attacked
+	- The ‘1’ enables cross-site scripting filter. ‘Block’ prevents the page from loading when attacked
 
 
 
@@ -29,9 +29,9 @@ X-XSS-Protection →1; mode=block
 book Response
 
 Alt-Svc →quic=":443"; ma=2592000; v="35,34"
-	- Lets you know that alternative services are available by port 443, max-age is 2592000 and 		version 35 and 34 only
+	- Lets you know that alternative services are available by port 443, max-age is 2592000 and version 35 and 34 only
 Cache-Control →private, max-age=0, must-revalidate, no-transform
-	- Private describes that the cache is locked down and only a private cache can cache the 		response. Max-age describes that it is no bigger than 0 seconds and must be revalidated each 	time you attempt to contact the sever. The no-transform means that the cache is not permitted 		to transform the response cache that is being requested
+	- Private describes that the cache is locked down and only a private cache can cache the response. Max-age describes that it is no bigger than 0 seconds and must be revalidated each time you attempt to contact the sever. The no-transform means that the cache is not permitted to transform the response cache that is being requested
 Content-Length →35331
 	- Size of the entire response body
 Content-Type →application/json; charset=UTF-8
@@ -49,5 +49,52 @@ X-Content-Type-Options →nosniff
 X-Frame-Options →SAMEORIGIN
 	- Frame can only be viewed on the same origin of the response
 X-XSS-Protection →1; mode=block
-	- The ‘1’ enables cross-site scripting filter. ‘Block’ prevents the page from loading when 			attacked
+	- The ‘1’ enables cross-site scripting filter. ‘Block’ prevents the page from loading when 	attacked
 
+Book Request
+
+		:authority:www.google-analytics.com
+		:method:POST
+			- Identifies which method 
+		:path:/collect
+			- Identifies which path
+		:scheme:https
+			- Identifies the scheme used
+		accept:*/*
+			- Identifies which media types are allowed
+		accept-encoding:gzip, deflate
+			- Identifies which encoding style is allowed
+		accept-language:en-US
+			- Identifies which language 
+		authority:www.google-analytics.com
+			- Identifies the service used
+		content-length:192
+			- Total Content Length
+		content-type:application/x-www-form-urlencoded
+			- Identifies content type
+		origin:file://
+		user-agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Postman/4.9.3 Chrome/53.0.2785.143 Electron/1.4.12 Safari/537.36
+
+ID Request
+
+		:authority:www.google-analytics.com
+		:method:POST
+			- Identifies which method 
+		:path:/collect
+			- Identifies which path
+		:scheme:https
+			- Identifies the scheme used
+		accept:*/*
+			- Identifies which media types are allowed
+		accept-encoding:gzip, deflate
+			- Identifies which encoding style is allowed
+		accept-language:en-US
+			- Identifies which language 
+		authority:www.google-analytics.com
+			- Identifies the service used
+		content-length:192
+			- Total Content Length
+		content-type:application/x-www-form-urlencoded
+			- Identifies content type
+		origin:file://
+		user-agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Postman/4.9.3 Chrome/53.0.2785.143 Electron/1.4.12 Safari/537.36
