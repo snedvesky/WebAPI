@@ -1,0 +1,55 @@
+{
+	"id": "8e720f6b-03a5-7cbe-1578-fd0d1938ea24",
+	"name": "HW1",
+	"description": "WEBAPI HW1",
+	"order": [
+		"73f85363-9c89-a2e3-ae0d-6600de1db33b",
+		"d3c17e71-c505-9af3-e45c-0d4f429bcce7"
+	],
+	"folders": [],
+	"timestamp": 1486268742854,
+	"owner": "1537171",
+	"public": false,
+	"requests": [
+		{
+			"id": "73f85363-9c89-a2e3-ae0d-6600de1db33b",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes/{{id}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "8e720f6b-03a5-7cbe-1578-fd0d1938ea24",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://www.googleapis.com/books/v1/volumes/{{id}}",
+			"description": "Specific search for book id HyMcH_9eTtoC",
+			"descriptionFormat": "html",
+			"time": 1486270598876,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d3c17e71-c505-9af3-e45c-0d4f429bcce7",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "8e720f6b-03a5-7cbe-1578-fd0d1938ea24",
+			"data": null,
+			"dataMode": "params",
+			"name": "https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
+			"description": "Search for books containing the title turing!",
+			"descriptionFormat": "html",
+			"time": 1486270674236,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
