@@ -3,8 +3,8 @@
 	"name": "HW1",
 	"description": "WEBAPI HW1",
 	"order": [
-		"73f85363-9c89-a2e3-ae0d-6600de1db33b",
-		"d3c17e71-c505-9af3-e45c-0d4f429bcce7"
+		"d3c17e71-c505-9af3-e45c-0d4f429bcce7",
+		"0411d169-9ce1-9705-6286-f188e998160c"
 	],
 	"folders": [],
 	"timestamp": 1486268742854,
@@ -12,44 +12,42 @@
 	"public": false,
 	"requests": [
 		{
-			"id": "73f85363-9c89-a2e3-ae0d-6600de1db33b",
+			"id": "0411d169-9ce1-9705-6286-f188e998160c",
 			"headers": "",
 			"url": "https://www.googleapis.com/books/v1/volumes/{{id}}",
-			"pathVariables": {},
 			"preRequestScript": null,
+			"pathVariables": {},
 			"method": "GET",
-			"collectionId": "8e720f6b-03a5-7cbe-1578-fd0d1938ea24",
 			"data": null,
 			"dataMode": "params",
-			"name": "https://www.googleapis.com/books/v1/volumes/{{id}}",
-			"description": "Specific search for book id HyMcH_9eTtoC",
-			"descriptionFormat": "html",
-			"time": 1486270598876,
 			"version": 2,
-			"responses": [],
-			"tests": null,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Contains ID\"] = jsonData.id === \"HyMcH_9eTtoC\";",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"time": 1486272779675,
+			"name": "https://www.googleapis.com/books/v1/volumes/{{id}}",
+			"description": "Specific seach for book id HyMcH_9eTtoC",
+			"collectionId": "8e720f6b-03a5-7cbe-1578-fd0d1938ea24",
+			"responses": []
 		},
 		{
 			"id": "d3c17e71-c505-9af3-e45c-0d4f429bcce7",
 			"headers": "",
 			"url": "https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
-			"pathVariables": {},
 			"preRequestScript": null,
+			"pathVariables": {},
 			"method": "GET",
-			"collectionId": "8e720f6b-03a5-7cbe-1578-fd0d1938ea24",
 			"data": null,
 			"dataMode": "params",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\ntests[\"Books contains Specific Title\"] = responseBody.has(\"turing\");",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486272785197,
 			"name": "https://www.googleapis.com/books/v1/volumes?q={{book_title}}",
 			"description": "Search for books containing the title turing!",
-			"descriptionFormat": "html",
-			"time": 1486270674236,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {}
+			"collectionId": "8e720f6b-03a5-7cbe-1578-fd0d1938ea24",
+			"responses": []
 		}
 	]
 }
